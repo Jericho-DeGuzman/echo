@@ -139,6 +139,7 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
+  deploymentBranch: 'gh-pages'
 };
 
 export default config;
