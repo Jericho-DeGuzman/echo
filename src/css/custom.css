@@ -6,25 +6,54 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  background-color: var(--ifm-color-backgroud);
+  --ifm-color-backgroud: #efefed;
+  --ifm-color-primary: #111827;
+  --ifm-color-primary-dark: #d9d9d4;
+  --ifm-color-primary-darker: #cdcdc7;
+  --ifm-color-primary-darkest: #9fafbf;
+  --ifm-color-primary-light: #ffffff;
+  --ifm-color-primary-lighter: #ffffff;
+  --ifm-color-primary-lightest: #ffffff;
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  /* --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1); */
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-backgroud: #374151;
+  --ifm-color-primary: #efefed;
+  --ifm-color-primary-dark: #313b49;
+  --ifm-color-primary-darker: #2f3745;
+  --ifm-color-primary-darkest: #272e39;
+  --ifm-color-primary-light: #3d4859;
+  --ifm-color-primary-lighter: #3f4b5d;
+  --ifm-color-primary-lightest: #485569;
+  /* --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3); */
+}
+
+.navbar {
+  margin: 24px;
+  background-color: var(--ifm-color-backgroud);
+  box-shadow: none;
+}
+
+.hero--primary {
+  background-color: var(--ifm-color-backgroud);
+  color: var(--ifm-color-primary);
+}
+
+.hero__title {
+  text-align: center;
+  width: 50%;
+  place-self: center;
+  margin: 24px
+}
+
+.hero__photo {
+  overflow: hidden;
+  width: 72px;
+  height: 72px;
+  border-radius: 100%;
+  place-self: center;
 }
