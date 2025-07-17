@@ -52,7 +52,6 @@ body {
   font-family: 'Poppins';
   text-align: center;
   width: 50%;
-  place-self: center;
   margin: 24px;
   background: linear-gradient(90deg, #9800ff 0%, #f62929 50%, #ffa908 100%);
   -webkit-text-fill-color: transparent;
@@ -73,11 +72,14 @@ body {
 @media screen and (max-width: 996px) {
   .hero__title {
     width: 100%;
-    font-size: 44px;
+    font-size: 36px;
+    margin: 24px 0;
   }
 
   .header__description {
     width: 100%;
+    font-size: 14px;
+    line-height: normal;
   }
 
   .container {
