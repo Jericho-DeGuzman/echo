@@ -51,6 +51,7 @@ body {
 .hero__title {
   font-family: 'Poppins';
   text-align: center;
+  place-self: center;
   width: 50%;
   margin: 24px;
   background: linear-gradient(90deg, #9800ff 0%, #f62929 50%, #ffa908 100%);
