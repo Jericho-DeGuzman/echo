@@ -60,6 +60,31 @@ body {
   font-weight: bold;
 }
 
+.header__description {
+  width: 50%;
+  place-self: center;
+  text-align: center;
+  font-size: 16px;
+  line-height: 2rem;
+  word-spacing: 2px;
+}
+
+
+@media screen and (max-width: 996px) {
+  .hero__title {
+    width: 100%;
+    font-size: 44px;
+  }
+
+  .header__description {
+    width: 100%;
+  }
+
+  .container {
+    padding: 0 24px;
+  }
+}
+
 .hero__photo {
   overflow: hidden;
   width: 96px;
@@ -108,14 +133,6 @@ body {
   }
 }
 
-.header__description {
-  width: 50%;
-  place-self: center;
-  text-align: center;
-  font-size: 16px;
-  line-height: 2rem;
-  word-spacing: 2px;
-}
 
 .header__get__in__touch {
   padding: 16px 24px;
