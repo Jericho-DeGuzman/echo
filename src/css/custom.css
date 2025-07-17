@@ -3,6 +3,7 @@
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* You can override the default Infima variables here. */
 :root {
@@ -21,15 +22,19 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-backgroud: #374151;
+  --ifm-color-backgroud: #0b0e10;
   --ifm-color-primary: #efefed;
-  --ifm-color-primary-dark: #313b49;
-  --ifm-color-primary-darker: #2f3745;
-  --ifm-color-primary-darkest: #272e39;
-  --ifm-color-primary-light: #3d4859;
-  --ifm-color-primary-lighter: #3f4b5d;
-  --ifm-color-primary-lightest: #485569;
+  --ifm-color-primary-dark: #0a0d0e;
+  --ifm-color-primary-darker: #090c0e;
+  --ifm-color-primary-darkest: #080a0b;
+  --ifm-color-primary-light: #0c0f12;
+  --ifm-color-primary-lighter: #0d1012;
+  --ifm-color-primary-lightest: #212121;
   /* --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3); */
+}
+
+body {
+  font-family: 'Poppins';
 }
 
 .navbar {
@@ -44,16 +49,81 @@
 }
 
 .hero__title {
+  font-family: 'Poppins';
   text-align: center;
   width: 50%;
   place-self: center;
-  margin: 24px
+  margin: 24px;
+  background: linear-gradient(90deg, #9800ff 0%, #f62929 50%, #ffa908 100%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: bold;
 }
 
 .hero__photo {
   overflow: hidden;
-  width: 72px;
-  height: 72px;
+  width: 96px;
+  height: 96px;
   border-radius: 100%;
+}
+
+.hero__photo__name {
+  position: absolute;
+  background-color: var(--ifm-color-primary-lightest);
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 16px;
+  border-radius: 100px;
+  color: var(--ifm-color-primary);
+  border: 1 solid var(--ifm-color-primary-lightest);
+  top: 30%;
+  transform: translateY(-30%);
+  left: calc(50% + 24px);
+  rotate: calc(-10deg);
+  animation: shake 1s ease-in-out;
+}
+
+.hero__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes shake {
+
+  0%,
+  100% {
+    transform: translateY(-30%) rotate(-15deg);
+  }
+
+  20%,
+  60% {
+    transform: translateY(-30%) rotate(-5deg);
+  }
+
+  40%,
+  80% {
+    transform: translateY(-30%) rotate(5deg);
+  }
+}
+
+.header__description {
+  width: 50%;
   place-self: center;
+  text-align: center;
+  font-size: 16px;
+  line-height: 2rem;
+  word-spacing: 2px;
+}
+
+.header__get__in__touch {
+  padding: 16px 24px;
+  border-radius: 100px;
+  font-size: 18px;
+  border: none;
+  background-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary-lightest);
+  place-self: center;
+  cursor: pointer;
 }

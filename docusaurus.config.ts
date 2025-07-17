@@ -13,7 +13,7 @@ const config: Config = {
   url: 'https://Jericho-DeGuzman.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/echonomi.github.io',
+  baseUrl: '/echo',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -31,7 +31,6 @@ const config: Config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
   presets: [
     [
       'classic',
@@ -82,11 +81,16 @@ const config: Config = {
           label: 'Documentation',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
-        // {
-        //   href: 'https://github.com/facebook/docusaurus',
-        //   label: 'GitHub',
-        //   position: 'right',
-        // },
+        {
+          href: 'https://github.com/Jericho-Deguzman/',
+          label: 'GitHub',
+          position: 'right',
+        },
+        {
+          href: 'https://www.linkedin.com/in/jericho-de-guzman-481a00229/',
+          label: 'LinkedIn',
+          position: 'right',
+        },
       ],
     },
     // footer: {

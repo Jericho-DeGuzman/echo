@@ -7,6 +7,7 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 
 import styles from './index.module.css';
+import { InformationConfig } from '@site/information.config';
 
 // function HomepageHeader() {
 //   const {siteConfig} = useDocusaurusContext();
@@ -33,15 +34,32 @@ function HomepageHeader() {
   return (
     <header
       className={clsx('hero hero--primary')}>
-      <div className='container'>
-        <div className='hero__photo'>
-          <img src='img/profile_pic.jpeg' />
+      <div className='container '>
+        <div className='hero__container'>
+          <div className='hero__photo'>
+            <div className='hero__photo__name'>
+              Hi, I&apos;m {InformationConfig.bannerHero.name} 👋
+            </div>
+            <img src='img/profile_pic.jpeg' />
+          </div>
         </div>
         <Heading as='h1' className='hero__title'>
-          Building Solutions, One Line of Code at a Time
+          {InformationConfig.bannerHero.title}
         </Heading>
+        <p
+          className='header__description'
+          dangerouslySetInnerHTML={{ __html: InformationConfig.bannerHero.description }}
+        />
+        <div className='hero__container'>
+          <Link
+            to="/blog">
+            <button className="header__get__in__touch">
+              View Blog
+            </button>
+          </Link>
+        </div>
       </div>
-    </header>
+    </header >
   )
 }
 
@@ -51,15 +69,11 @@ export default function Home(): ReactNode {
     <Layout
       title={`${siteConfig.title}`}
       description="">
-
       <HomepageHeader />
-
       {/* <HomepageHeader />
       <main>
         <HomepageFeatures />
       </main> */}
-
-
     </Layout>
   );
 }
